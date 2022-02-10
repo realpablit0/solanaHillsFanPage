@@ -1,0 +1,66 @@
+.memory-game {
+    background: rgba(0, 0, 0, .1);
+    width: 55%;
+    margin: 0 auto;
+    padding: 0.5rem 3rem 3rem 3rem;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+}
+
+.memory-game .grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.memory-game .card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.memory-game .card,
+.memory-game .back,
+.memory-game .front {
+  height: 150px;
+  width: 150px;
+}
+
+.memory-game .back,
+.memory-game .front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.memory-game .front {
+  z-index: 2;
+  background: #FAB942 url('https://solanahills.io/_nuxt/img/About_UnknownBird-Image.b60c35d.png') no-repeat center center / contain;
+  border-radius: 10px;
+
+}
+
+.memory-game .front:hover {
+  border: 2px solid lightskyblue;
+}
+
+.memory-game .back {
+  transform: rotateY(180deg);
+  background-color: #6589F9;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.memory-game .selected {
+  transform: rotateY(180deg);
+}
+
+.memory-game .match .front {
+  border-radius: 10px;
+  background: #6589F9 url('https://solanahills.io/_nuxt/img/About_UnknownDragon-Image.9aca164.png') no-repeat center center / contain !important;
+}

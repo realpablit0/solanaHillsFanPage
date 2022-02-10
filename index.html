@@ -28,7 +28,7 @@
             <div class='console-underscore' id='console'>&#95;</div>
         </div> -->
         <div class="__nav-header-text">
-            <span>Solana Hills Fan Page</span>
+            <span id="navbar-text">Solana Hills Fan Page</span>
         </div>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn">
@@ -55,8 +55,13 @@
             <article>
                 <h1>
                     <span class="embiggen">Solana</span>
-                    <div class="fancy amp"><span>&#9830;</span></div>
-                    Hills
+                    <div class="fancy amp"><span class="embiggen"><img src="./imgs/solanaHills-blue.png"
+                                alt="logo"></span>
+                    </div>
+                    <span style="text-shadow: 0 0 40px #ffbab3">
+                        Hills
+
+                    </span>
                 </h1>
                 <div class="copy">
                     <p>Solana Hills is an experiment to see if we can build a top tier city together as a community.
@@ -405,64 +410,72 @@
                 <h2>Minigames</h2>
             </a>
         </div>
-        <h2 style="color: #ccc; cursor: none;">coming soon...</h2>
-    </div>
-    <!-- accordion -->
-    <div id="about" class="accordion">
-        <span class="star-span">&#128946;</span>
-        <span class="star-span">&#128946;</span>
-        <span class="star-span">&#128952;</span>
-        <span class="star-span" style="float: right;">&#128946;</span>
-        <span class="star-span" style="float: right;">&#128946;</span>
-        <span class="star-span" style="float: right;">&#128952;</span>
-        <a href="#about">
-            <h2 class="area-link">About me</h2>
-        </a>
-        <details class="content">
-            <summary>Our opinion about Solana Hills</summary>
-            <p>
-                Solana Hills is one of the most interesting NFT projects on the Solana Blockchain. <br> <br>
-                Apart from this insane looking design, the very elaborated roadmap, there is the greatest community
-                behind. <br><br>
-                As well there is an unique possibility for community members to impact the project with they`re own
-                fantastic and creative ideas.
-                <br><br>
-                Thanks that we can be a part of it.
-                <br>
-                We love this project! &#9829;
-            </p>
-        </details>
 
-        <details class="content">
-            <summary>Future of this website</summary>
-            <p>
-                We will host this website as long as we can, fix bugs and enter some suggestions.
-                <br><br>
-                As well we want to add a few minigames so you can have much more fun on this page!
-                <br><br>
-                Suggestions? Bugs? Let us know!<br>
-                feel free to contact us!<br><br>
-                Discord: "pablit0#9839" | "Pat0x | Solana Hills#2861"
-            </p>
-        </details>
+        <!-- memory minigame -->
+        <div id="minigames-memory" class="memory-game">
+            <a href="#minigames-memory" class="area-link">
+                <h2>Memory</h2>
+            </a>
+            <div id="game"></div>
+        </div>
 
-        <details class="content">
-            <summary>Who we are ?!</summary>
-            <p>
-                We are two guys who love great NFT communitys and do some nerdy stuff.
-                <br><br>
-                For business or service requests feel free to contact us!
-                <br><br>
-                Discord: "pablit0#9839" | "Pat0x | Solana Hills#2861"
-            </p>
-        </details>
-    </div>
-    <footer>
-        <h3 class="credits">This is just a Fan website! You can find the project website <a
-                href="https://solanahills.io/" target="_blank">here</a></h3>
-        <h3 class="note"></h3>
-    </footer>
-    <script src="./js/index.js"></script>
+        <!-- accordion -->
+        <div id="about" class="accordion">
+            <span class="star-span">&#128946;</span>
+            <span class="star-span">&#128946;</span>
+            <span class="star-span">&#128952;</span>
+            <span class="star-span" style="float: right;">&#128946;</span>
+            <span class="star-span" style="float: right;">&#128946;</span>
+            <span class="star-span" style="float: right;">&#128952;</span>
+            <a href="#about">
+                <h2 class="area-link">About us</h2>
+            </a>
+            <details class="content">
+                <summary>Our opinion about Solana Hills</summary>
+                <p>
+                    Solana Hills is one of the most interesting NFT projects on the Solana Blockchain. <br> <br>
+                    Apart from this insane looking design, the very elaborated roadmap, there is the greatest community
+                    behind. <br><br>
+                    As well there is an unique possibility for community members to impact the project with they`re own
+                    fantastic and creative ideas.
+                    <br><br>
+                    Thanks that we can be a part of it.
+                    <br>
+                    We love this project! &#9829;
+                </p>
+            </details>
+
+            <details class="content">
+                <summary>Future of this website</summary>
+                <p>
+                    We will host this website as long as we can, fix bugs and enter some suggestions.
+                    <br><br>
+                    As well we want to add a few minigames so you can have much more fun on this page!
+                    <br><br>
+                    Suggestions? Bugs? Let us know!<br>
+                    feel free to contact us!<br><br>
+                    Discord: "pablit0#9839" | "Pat0x | Solana Hills#2861"
+                </p>
+            </details>
+
+            <details class="content">
+                <summary>Who we are ?!</summary>
+                <p>
+                    We are two guys who love great NFT communitys and do some nerdy stuff.
+                    <br><br>
+                    For business or service requests feel free to contact us!
+                    <br><br>
+                    Discord: "pablit0#9839" - "Pat0x | Solana Hills#2861"
+                </p>
+            </details>
+        </div>
+        <footer>
+            <h3 class="credits">This is just a Fan website! You can find the project website <a
+                    href="https://solanahills.io/" target="_blank">here</a></h3>
+            <h3 class="note"></h3>
+        </footer>
+        <script src="./js/index.js"></script>
+        <script src="./js/memory-game.js"></script>
 
 </body>
 

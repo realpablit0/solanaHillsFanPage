@@ -171,8 +171,6 @@ __navbar .logo:hover {
 
 
 /* navbar header text */
-
-
 .__nav-header-text span {
   float: left;
   font-size: 2.5rem;
@@ -200,7 +198,6 @@ __navbar .logo:hover {
     color: #111;
     text-shadow: none;
   }
-
   0%,
   19%,
   21%,
