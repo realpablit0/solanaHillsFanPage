@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/memory-game.css">
+    <title>Solana Hills Fan Page</title>
+</head>
+
+<body onload="init()">
+    <!-- background -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <!-- nav bar -->
+    <div class="__navbar">
+        <img id="header-image" src="./imgs/solanaHills.png" alt="logo">
+        <!-- <div class='console-container'><span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
+        </div> -->
+        <div class="__nav-header-text">
+            <span>Solana Hills Fan Page</span>
+        </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
+        <ul class="menu">
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#raritys">Raritys</a></li>
+            <li><a href="#nft-show">NFT showcase</a></li>
+            <li><a href="#fan-art">Fan Art</a></li>
+            <li><a href="#minigames">Minigames</a></li>
+            <li><a href="#about">About</a></li>
+            <li id="discord-link"><img src="./imgs/discord.svg" alt="discord"></li>
+            <li id="instagram-link"><img src=" ./imgs/instagram.png" alt="instagram">
+            </li>
+            <li id="twitter-link"><img src="./imgs/twitter.png" alt="twitter">
+            </li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="header-container">
+
+            <article>
+                <h1>
+                    <span class="embiggen">Solana</span>
+                    <div class="fancy amp"><span>&#9830;</span></div>
+                    Hills
+                </h1>
+                <div class="copy">
+                    <p>Solana Hills is an experiment to see if we can build a top tier city together as a community.
+                        <br><br>
+                        We could build it ourselves, but what fun would that be?
+                        <br> <br>
+                        We believe having our Residents
+                        involved in the planning
+                        is a much more effective
+                        way of fostering.
+                    </p>
+                </div>
+
+            </article>
+        </div>
+    </header>
+
+    <!-- special fan art -->
+    <div id="special-fanart" class="special-fanart">
+        <a href="#special-fanart" class="area-link">
+            <h2>wake up and be Happy!</h2>
+        </a>
+        <div class="__image-slider">
+            <ul class="slides">
+                <input type="radio" name="radio-btn" id="img-1" checked />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="./imgs/fan-art/specialFanArt1.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-2" class="prev">&#x2039;</label>
+                        <label for="img-2" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-2" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="./imgs/fan-art/specialFanArt2.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-1" class="prev">&#x2039;</label>
+                        <label for="img-1" class="next">&#x203a;</label>
+                    </div>
+                </li>
+                <li class="nav-dots">
+                    <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                </li>
+            </ul>
+        </div>
+        <a href="#fan-art" style="color: #4fb2b2;">more fan art</a>
+    </div>
+    <!-- roadmap -->
+    <div id="roadmap" class="roadmap-container">
+        <div class="roadmap-header">
+            <a href="#roadmap" class="area-link">
+                <h2 style="margin-top: 2rem;">Roadmap</h2>
+            </a>
+            <img src="./imgs/roadmap.jpg" alt="">
+            <div class="roadmap-text">
+                <h2>full explanation <a href="https://solanahills.io/#roadmap">here</a></h2>
+            </div>
+        </div>
+    </div>
+    <!-- raritys -->
+    <div id="raritys" class="__rarity-container">
+        <a href="#raritys" class="area-link">
+            <h2>Raritys</h2>
+        </a>
+        <div class="rarity-container">
+            <div>
+                <img src="https://solanahills.io/_nuxt/img/Rarity_Common-Image.9f20295.png" alt="">
+                <h3>rare</h3>
+            </div>
+            <div>
+                <img src="https://solanahills.io/_nuxt/img/Rarity_Rare-Image.0d3ea96.png" alt="">
+                <h3>super rare</h3>
+            </div>
+            <div>
+                <img src="https://solanahills.io/_nuxt/img/Rarity_Elite-Image.71f4ef6.png" alt="">
+                <h3>elite</h3>
+            </div>
+            <div>
+                <img src="https://solanahills.io/_nuxt/img/Rarity_Legendary-Image.7b47520.png" alt="">
+                <h3>godly</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- NFT show -->
+    <div id="nft-show" class="ntf-container">
+        <a href="#nft-show" class="area-link">
+            <h2 style="margin-top: 2rem;">NFT Showcase</h2>
+        </a>
+        <div class="nft-show">
+            <!-- dont change first image -->
+            <div class="card">
+                <img src="./imgs/nfts/solanaHillsNFT1.png">
+                <div class="card__head">sneak peek</div>
+            </div>
+            <div class="card">
+                <img src="./imgs/nfts/solanaHillsNFT7.jpg">
+                <div class="card__head">sneak peek</div>
+            </div>
+            <div class="card">
+                <img src="./imgs/nfts/solanaHillsNFT3.png">
+                <div class="card__head">sneak peek</div>
+            </div>
+            <div class="card">
+                <img src="./imgs/nfts/solanaHillsNFT4.png">
+                <div class="card__head">sneak peek</div>
+            </div>
+            <div class="card">
+                <img src="./imgs/nfts/solanaHillsNFT5.png">
+                <div class="card__head">sneak peek</div>
+            </div>
+            <div class="card">
+                <img src="./imgs/nfts/solanaHillsNFT6.jpg">
+                <div class="card__head">sneak peek</div>
+            </div>
+
+            <!-- dont change last! -->
+            <div class="card">
+                <img src="./imgs/nfts/solanaHillsNFT2.png">
+                <div class="card__head">sneak peek</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fan art -->
+    <div class="__container">
+        <a href="#fan-art" class="area-link">
+            <h2>Fan Art</h2>
+        </a>
+        <div id="fan-art" class="container">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-17.gif">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>headtop#8627</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-1.gif">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>Jonatan | Blankies#8092</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-2.jpg">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>Thijs#1218</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-3.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>Genrez#7058</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-4.jpg">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>Genrez#7058</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-5.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>Genrez#7058</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-6.gif">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>macmac_1#8428</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-7.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>ayberkk | Bored Meka#1912</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-8.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>Jonatan | Blankies#8092</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-9.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>Talha#5984</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-10.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>fan1910#2106</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-11.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>cedd#0168</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-12.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>cedd#0168</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-13.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>Talha#5984</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-14.jpg">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>macmac_1#8428</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-15.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>BRohits | Genreous Robot#8768</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./imgs/fan-art/fan-art-16.jpg">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>Bii9 / SH < 3#1017 </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img
+                        src="https://media.discordapp.net/attachments/936432123349463040/941020510203039795/6C65848B-B3E3-4A93-AFB0-45EFC461025B.png?width=610&height=610">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>magicESCOBAR#8648</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img
+                        src="https://media.discordapp.net/attachments/936432123349463040/940749935123525682/B040D11A-C16E-4FBC-AFD6-9D7178E7A4A4.png">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>MaestroMaxoMega | FAP#5825</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img
+                        src="https://media.discordapp.net/attachments/936432123349463040/940738590193893386/8.jpg?width=610&height=610">
+                </div>
+                <div class="content">
+                    <div class="img-title">
+                        <h3>Bii9 / SH < 3#1017 </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="minigames" class="minigames-container">
+        <div class="mini-games-header">
+            <a href="#minigames" class="area-link">
+                <h2>Minigames</h2>
+            </a>
+        </div>
+        <h2 style="color: #ccc; cursor: none;">coming soon...</h2>
+    </div>
+    <!-- accordion -->
+    <div id="about" class="accordion">
+        <span class="star-span">&#128946;</span>
+        <span class="star-span">&#128946;</span>
+        <span class="star-span">&#128952;</span>
+        <span class="star-span" style="float: right;">&#128946;</span>
+        <span class="star-span" style="float: right;">&#128946;</span>
+        <span class="star-span" style="float: right;">&#128952;</span>
+        <a href="#about">
+            <h2 class="area-link">About me</h2>
+        </a>
+        <details class="content">
+            <summary>Our opinion about Solana Hills</summary>
+            <p>
+                Solana Hills is one of the most interesting NFT projects on the Solana Blockchain. <br> <br>
+                Apart from this insane looking design, the very elaborated roadmap, there is the greatest community
+                behind. <br><br>
+                As well there is an unique possibility for community members to impact the project with they`re own
+                fantastic and creative ideas.
+                <br><br>
+                Thanks that we can be a part of it.
+                <br>
+                We love this project! &#9829;
+            </p>
+        </details>
+
+        <details class="content">
+            <summary>Future of this website</summary>
+            <p>
+                We will host this website as long as we can, fix bugs and enter some suggestions.
+                <br><br>
+                As well we want to add a few minigames so you can have much more fun on this page!
+                <br><br>
+                Suggestions? Bugs? Let us know!<br>
+                feel free to contact us!<br><br>
+                Discord: "pablit0#9839" | "Pat0x | Solana Hills#2861"
+            </p>
+        </details>
+
+        <details class="content">
+            <summary>Who we are ?!</summary>
+            <p>
+                We are two guys who love great NFT communitys and do some nerdy stuff.
+                <br><br>
+                For business or service requests feel free to contact us!
+                <br><br>
+                Discord: "pablit0#9839" | "Pat0x | Solana Hills#2861"
+            </p>
+        </details>
+    </div>
+    <footer>
+        <h3 class="credits">This is just a Fan website! You can find the project website <a
+                href="https://solanahills.io/" target="_blank">here</a></h3>
+        <h3 class="note"></h3>
+    </footer>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
