@@ -141,35 +141,6 @@ __navbar .logo:hover {
   top: 0;
 }
 
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .__navbar li {
-    float: left;
-  }
-  .__navbar li a {
-    padding: 20px 30px;
-  }
-  .__navbar .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .__navbar .menu-icon {
-    display: none;
-  }
-}
-
-
-.__navbar img {
-    float: left;
-    width: 48px;
-    height: 48px;
-    margin-top: 5px;
-}
-
-
-
 /* navbar header text */
 .__nav-header-text span {
   float: left;
@@ -190,6 +161,40 @@ __navbar .logo:hover {
   -webkit-animation: blink 12s infinite;
   margin-left: 20px;
 }
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .__navbar li {
+    float: left;
+  }
+  .__navbar li a {
+    padding: 20px 30px;
+  }
+  .__navbar .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .__navbar .menu-icon {
+    display: none;
+  }
+  .__nav-header-text span {
+      font-size: 1.5rem;
+  }
+}
+
+
+
+.__navbar img {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-top: 5px;
+}
+
+
+
 
 @-webkit-keyframes blink {
   20%,

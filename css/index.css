@@ -60,6 +60,28 @@ body {
   }
 }
 
+.area-link {
+  font-family: SquareBeat;
+    cursor: pointer;
+    font-size: 40px;
+    color: lightskyblue;
+    text-decoration: none;
+}
+.area-link:hover {
+    color: rgba(135, 206, 250, 0.801);
+    text-decoration: none;
+}
+
+a:link {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
 
 /* header    font-family: 'Dancing Script', cursive; */
 header {
@@ -160,7 +182,17 @@ article {
   font-size: 25px;
 }
 
+@media only screen and (max-width:528px) {
+  .copy p {
+    font-size: 20px;
+  } 
+}
 
+@media only screen and (max-width:366px) {
+  .copy p {
+    font-size: 15px;
+  } 
+}
 
 /* console text */
 .hidden {
@@ -357,6 +389,23 @@ input#img-3:checked ~ .nav-dots label#img-dot-3{
     }
 } 
 
+@media only screen and (max-width: 528px) {
+    .slides {
+      width: 309px;
+      height: 120px;
+    }
+    .slide {
+      width: 309px;
+      height: 170px;
+    }
+    .nav label {
+      line-height: 160px;
+    }
+    .area-link {
+      font-size: 20px;
+    }
+}
+
 /* roadmap */
 .roadmap-container {
     margin-top: 7rem;
@@ -529,7 +578,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3{
   transition: 0.5s;
   transform-style: preserve-3d;
   overflow: hidden;
-  margin-right: 15px;
+  
   margin-top: 45px;
   border-radius: 10px;
 }
@@ -620,30 +669,19 @@ input#img-3:checked ~ .nav-dots label#img-dot-3{
   transform: translateY(0px);
 }
 
+@media only screen and (max-width: 1108px) {
+  .container .box {
+    width: 100px;
+    height: 100px;
+    
+  }
+  .container .box:hover .img-title h3 {
+    font-size: 7px;
+  }
+}
+
 /* Accordion styles */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
-
-.area-link {
-  font-family: SquareBeat;
-    cursor: pointer;
-    font-size: 40px;
-    color: lightskyblue;
-    text-decoration: none;
-}
-.area-link:hover {
-    color: rgba(135, 206, 250, 0.801);
-    text-decoration: none;
-}
-
-a:link {
-    color: lightskyblue;
-    text-decoration: none;
-}
-
-a:visited {
-    color: lightskyblue;
-    text-decoration: none;
-}
 
 .accordion {
   background: linear-gradient(-45deg, #4d3c74, #5b4888, #6a549c, #886cc8);
