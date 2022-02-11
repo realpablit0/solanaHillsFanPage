@@ -164,7 +164,7 @@ __navbar .logo:hover {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 802px) {
   .__navbar li {
     float: left;
   }
@@ -179,12 +179,19 @@ __navbar .logo:hover {
   .__navbar .menu-icon {
     display: none;
   }
+}
+
+@media only screen and (max-width: 740px) {
   .__nav-header-text span {
-      font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
-
+@media only screen and (max-width:940px) {
+  .__nav-credits-right {
+    display: none;
+  }
+}
 
 .__navbar img {
     float: left;
