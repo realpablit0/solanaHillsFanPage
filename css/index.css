@@ -581,6 +581,9 @@ input#img-3:checked ~ .nav-dots label#img-dot-3{
   .nft-show .card:nth-child(3) {
     display: none;
   }
+  .card__head {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width:600px) {
