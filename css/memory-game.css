@@ -1,15 +1,11 @@
-.memory-game {
-  background-color: rgba(0, 0, 0, .1);
-  margin: 0 auto;
-  border-radius: 10px;
-}
+
 .memory-game .grid {
   max-width: 960px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin: 0 auto;
   gap: 1rem;
-  align-items: end;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .memory-game .card {
