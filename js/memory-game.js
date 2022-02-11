@@ -103,7 +103,6 @@ const match = () => {
     });
     if (matches === gameGrid.length / 2) {
         setTimeout(() => {
-            trackWonGame()
             restartGame()
         }, 3000)
     }
@@ -122,7 +121,6 @@ const resetGuesses = () => {
 };
 
 grid.addEventListener('click', event => {
-    trackClick()
     const clicked = event.target;
     if (
         clicked.nodeName === 'SECTION' ||
