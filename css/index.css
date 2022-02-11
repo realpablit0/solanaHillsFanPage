@@ -581,7 +581,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3{
   .nft-show .card:nth-child(3) {
     display: none;
   }
-  .card__head {
+  .card:hover .card__head {
     font-size: 1em;
   }
 }
@@ -596,8 +596,8 @@ input#img-3:checked ~ .nav-dots label#img-dot-3{
   .nft-show .card:nth-child(4) {
     display: none;
   }
-  .card__head {
-    font-size: 10px;
+  .card:hover .card__head {
+    font-size: 1em;
   }
 }
 
