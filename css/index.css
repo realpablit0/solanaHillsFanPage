@@ -597,7 +597,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3{
     display: none;
   }
   .card__head {
-    font-size: 1em;
+    font-size: 10px;
   }
 }
 
