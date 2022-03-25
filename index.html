@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/memory-game.css">
+    <link rel="stylesheet" href="./css/doodleJump.css">
     <title>Solana Hills Fan Page</title>
 </head>
 
@@ -416,9 +417,47 @@
             </a>
             <div id="game"></div>
         </div>
+        <!-- doodle jump minigame -->
+        <a id="hills-jump-area-link" href="#minigames-hillsJump" class="area-link">
+            <h2>Hills Jump</h2>
+            <h3 id="hillsJump-note">HillsJump is only playable on devices with screen width > 472px</h3>
+        </a>
+        <div id="hillsJump" class="doodleJump-container">
+            <canvas id="canvas">
+                Aww, your browser doesn't support HTML5!
+            </canvas>
+
+            <div id="mainMenu">
+                <h1>Hills Jump</h1>
+                <p class="info">
+                    use
+                    <span class="key left">←</span>
+                    <span class="key right">→</span>
+                    to move and space to (re) start...
+                </p>
+                <a class="button" href="javascript:init()">Play</a>
+            </div>
+
+            <div id="gameOverMenu">
+                <h1>game over!</h1>
+                <h3 id="go_score">you scored 0 points</h3>
+                <img src="./imgs/nfts/solanaHillsNFT2.png" alt="">
+                <a class="button" href="javascript:reset()">Restart</a>
+            </div>
+
+
+            <!-- Preloading image -->
+            <img id="sprite" src="./imgs/doodleJump/util.png" />
+
+            <div id="scoreBoard">
+                <p id="score">0</p>
+            </div>
+
+        </div>
         <div>
             <h3 style="color: #ccc;">more games coming soon...</h3>
         </div>
+
     </div>
     <!-- accordion -->
     <div id="about" class="accordion">
@@ -477,6 +516,7 @@
     </footer>
     <script src="./js/index.js"></script>
     <script src="./js/memory-game.js"></script>
+    <script src="./js/doodleJump-game.js"></script>
 </body>
 
 </html>
